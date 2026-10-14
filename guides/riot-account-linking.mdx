@@ -67,9 +67,15 @@ Players can remove their Riot identity at any time with `/riot unlink`. That cle
 
 ## Screenshots (for reviewers)
 
-**You do not need live RSO screenshots to approve the production-key application.** Riot issues the RSO client id and secret *after* that approval, when they kick off RSO integration. Until then, this page (flowchart + steps above) is the public prototype / visual user flow.
+**You do not need live RSO screenshots to approve the production-key application.** Riot issues the RSO client id and secret *after* that approval, when they kick off RSO integration. Until then, this page (flowchart + steps above) plus the Discord UI mockup below is the public prototype / visual user flow.
 
-After RSO credentials are issued and configured on the bot, add captures under `images/` and embed them here:
+### Discord `/riot link` (mockup — pre-RSO credentials)
+
+This is the ephemeral reply players see before Sign-On. The authorize URL is inactive until Riot issues the RSO client.
+
+<img src="/images/riot-link-ephemeral-mockup.png" alt="Mockup of Discord ephemeral /riot link reply with opt-in disclaimer and Sign in with Riot button" width="480" />
+
+After RSO credentials are issued and configured on the bot, replace mocks with real captures:
 
 | Shot | What to capture | When |
 |---|---|---|

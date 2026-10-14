@@ -67,15 +67,17 @@ Players can remove their Riot identity at any time with `/riot unlink`. That cle
 
 ## Screenshots (for reviewers)
 
-Add these captures under `images/` when available, then embed them here. Until then, this list is the intended visual checklist:
+**You do not need live RSO screenshots to approve the production-key application.** Riot issues the RSO client id and secret *after* that approval, when they kick off RSO integration. Until then, this page (flowchart + steps above) is the public prototype / visual user flow.
 
-| Shot | What to capture |
-|---|---|
-| Discord `/riot link` | Ephemeral reply: opt-in disclaimer, privacy policy link, **Sign in with Riot** button |
-| Riot authorize | Riot Sign-On page after the button (`auth.riotgames.com`) |
-| Callback success | Premier Planner callback page confirming the link and repeating opt-in |
-| Discord after link | Team view (or equivalent) showing linked Riot ID / roster status |
-| Discord `/riot unlink` | Ephemeral confirmation that the Riot account was unlinked |
+After RSO credentials are issued and configured on the bot, add captures under `images/` and embed them here:
+
+| Shot | What to capture | When |
+|---|---|---|
+| Discord `/riot link` | Ephemeral reply: opt-in disclaimer, privacy policy link, **Sign in with Riot** button | After RSO client is configured |
+| Riot authorize | Riot Sign-On page after the button (`auth.riotgames.com`) | After RSO client is configured |
+| Callback success | Premier Planner callback page confirming the link and repeating opt-in | After RSO client is configured |
+| Discord after link | Team view showing roster status for a linked member | After a test link |
+| Discord `/riot unlink` | Ephemeral unlink confirmation | After a test link |
 
 Do **not** include passwords, full email addresses, or unrelated PII in screenshots. Blur Discord avatars if needed.
 
